@@ -1,0 +1,31 @@
+{
+  "name": "takurinton",
+  "description": "新卒研修の TDD のコード",
+  "version": "0.0.1",
+  "author": {
+    "name": "TDD"
+  },
+  "bugs": {
+    "url": "https://github.com/alcohol-megusuri/catra_TDD/issues"
+  },
+  "devDependencies": {
+    "eslint": "^5.0.1",
+    "espower-loader": "^1.2.2",
+    "intelli-espower-loader": "^1.0.1",
+    "lodash": ">=4.17.21",
+    "mocha": "^5.2.0",
+    "power-assert": "^1.6.0"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "homepage": "https://github.com/alcohol-megusuri/catra_TDD",
+  "license": "MIT",
+  "main": "lib/sample.js",
+  "scripts": {
+    "lint": "eslint 'lib/**' 'test/**'",
+    "pretest": "npm run lint",
+    "test": "mocha --require intelli-espower-loader",
+    "watch": "mocha --require intelli-espower-loader --watch"
+  }
+}
